@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Géométrique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Calculatrice géométrique</div>
+            <button class="burger-menu" onclick="toggleMenu()">☰</button>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" onclick="showSection('perimeterSection')">Périmètre</a></li>
+                    <li><a href="#" onclick="showSection('areaSection')">Aire</a></li>
+                    <li><a href="#" onclick="showSection('volumeSection')">Volume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Périmètre Section -->
+        <section id="perimeterSection" class="active">
+            <h2>Calcul du Périmètre</h2>
+            <label for="shapePerimeter">Choisissez une forme:</label>
+            <select id="shapePerimeter" onchange="updateInputs('perimeter')">
+                <option value="carré">Carré</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="triangle">Triangle</option>
+                <option value="cercle">Cercle</option>
+                <option value="losange">Losange</option>
+                <option value="trapèze">Trapèze</option>
+            </select>
+            <div class="introduction" id="perimeterIntroduction"></div>
+            <div id="perimeterInputs"></div>
+            <button onclick="calculatePerimeter()">Calculer le Périmètre</button>
+            <div id="perimeterResult"></div>
+        </section>
+        <!-- Aire Section -->
+        <section id="areaSection">
+            <h2>Calcul de l'Aire</h2>
+            <label for="shapeArea">Choisissez une forme:</label>
+            <select id="shapeArea" onchange="updateInputs('area')">
+                <option value="carré">Carré</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="triangle">Triangle</option>
+                <option value="cercle">Cercle</option>
+                <option value="losange">Losange</option>
+                <option value="trapèze">Trapèze</option>
+            </select>
+            <div class="introduction" id="areaIntroduction"></div>
+            <div id="areaInputs"></div>
+            <button onclick="calculateArea()">Calculer l'Aire</button>
+            <div id="areaResult"></div>
+        </section>
+        <!-- Volume Section -->
+        <section id="volumeSection">
+            <h2>Calcul du Volume</h2>
+            <label for="shapeVolume">Choisissez une forme:</label>
+            <select id="shapeVolume" onchange="updateInputs('volume')">
+                <option value="cube">Cube</option>
+                <option value="sphère">Sphère</option>
+                <option value="prisme">Prisme</option>
+                <option value="cylindre">Cylindre</option>
+                <option value="cône">Cône</option>
+                <option value="pyramide">Pyramide</option>
+                <option value="parallélépipède rectangle">Parallélépipède rectangle</option>
+            </select>
+            <div class="introduction" id="volumeIntroduction"></div>
+            <div id="volumeInputs"></div>
+            <button onclick="calculateVolume()">Calculer le Volume</button>
+            <div id="volumeResult"></div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 <a href="https://github.com/TacticsDreams">TacticsDreams</a> Calculatrice Géométrique. Tous droits réservés.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

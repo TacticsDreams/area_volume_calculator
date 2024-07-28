@@ -1,0 +1,27 @@
+{
+    "perimeter": {
+        "carré": "Un carré a quatre côtés égaux. La formule du périmètre est 4 × côté.",
+        "rectangle": "Un rectangle a deux paires de côtés égaux. La formule du périmètre est 2 × (longueur + largeur).",
+        "triangle": "Un triangle a trois côtés. La formule du périmètre est côté1 + côté2 + côté3.",
+        "cercle": "Un cercle est une figure ronde. La formule du périmètre est 2 × π × rayon.",
+        "losange": "Un losange a quatre côtés égaux. La formule du périmètre est 4 × côté.",
+        "trapèze": "Un trapèze a deux côtés parallèles et deux côtés non parallèles. La formule du périmètre est base1 + base2 + côté1 + côté2."
+    },
+    "area": {
+        "carré": "Un carré a quatre côtés égaux. La formule de l'aire est côté × côté.",
+        "rectangle": "Un rectangle a deux paires de côtés égaux. La formule de l'aire est longueur × largeur.",
+        "triangle": "Un triangle a trois côtés. La formule de l'aire est ½ × base × hauteur.",
+        "cercle": "Un cercle est une figure ronde. La formule de l'aire est π × rayon².",
+        "losange": "Un losange a quatre côtés égaux. La formule de l'aire est base × hauteur.",
+        "trapèze": "Un trapèze a deux côtés parallèles. La formule de l'aire est ½ × (base1 + base2) × hauteur."
+    },
+    "volume": {
+        "cube": "Un cube a six faces carrées égales. La formule du volume est côté³.",
+        "sphère": "Une sphère est une figure ronde en trois dimensions. La formule du volume est 4/3 × π × rayon³.",
+        "prisme": "Un prisme a deux bases parallèles et des faces rectangulaires. La formule du volume est aire de la base × hauteur.",
+        "cylindre": "Un cylindre a deux bases circulaires et une face latérale rectangulaire. La formule du volume est π × rayon² × hauteur.",
+        "cône": "Un cône a une base circulaire et une face latérale en forme de triangle. La formule du volume est 1/3 × π × rayon² × hauteur.",
+        "pyramide": "Une pyramide a une base polygonale et des faces triangulaires. La formule du volume est 1/3 × aire de la base × hauteur.",
+        "parallélépipède rectangle": "Un parallélépipède rectangle a des faces rectangulaires. La formule du volume est longueur × largeur × hauteur."
+    }
+}
